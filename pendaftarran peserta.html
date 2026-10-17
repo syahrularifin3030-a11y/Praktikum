@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8ff;
+            margin: 40px;
+        }
+        h1 {
+            color: #1a56b0;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccd;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        th {
+            background: #1a56b0;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td {
+            border: 1px solid #ccd;
+            padding: 10px;
+        }
+        button {
+            background: #1a56b0;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #14438f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pendaftaran Peserta</h1>
+
+    <!-- Form Pendaftaran -->
+    <form action="proses_pendaftaran.php" method="post">
+        <label>Nama: <input type="text" name="nama" value="Budi Santoso"></label><br><br>
+        
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="jk" value="L" checked> L 
+        <input type="radio" name="jk" value="P"> P<br><br>
+        
+        <label>Jurusan: 
+            <select name="jurusan">
+                <option selected>Informatika</option>
+                <option>Sistem Informasi</option>
+            </select>
+        </label><br><br>
+        
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Tabel Daftar Peserta -->
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Jurusan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Budi Santoso</td>
+            <td>Informatika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sari Wulandari</td>
+            <td>Sistem Informasi</td>
+        </tr>
+    </table>
+
+</body>
+</html>
